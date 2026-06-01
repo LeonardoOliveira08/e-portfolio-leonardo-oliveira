@@ -1,0 +1,116 @@
+@import url('style.css');
+
+#nav a[href="importancia.html"] {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 950px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.page-header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.main-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 3rem;
+    box-shadow: var(--shadow-subtle);
+    margin-bottom: 2.5rem;
+}
+
+.main-card h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+    letter-spacing: -0.5px;
+}
+
+.main-card p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.main-card p:last-child {
+    margin-bottom: 0;
+}
+
+.importance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.features-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-subtle);
+    transition: transform 0.2s ease;
+}
+
+.features-card:hover {
+    transform: translateY(-3px);
+}
+
+.icon-box {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent);
+    background-color: rgba(43, 108, 176, 0.08);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+}
+
+.features-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+}
+
+.features-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 2rem auto;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main-card {
+        padding: 1.75rem;
+    }
+}
