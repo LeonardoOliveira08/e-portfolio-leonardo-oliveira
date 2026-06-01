@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio - Leonardo Oliveira</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">E-Portfolio - Leonardo Oliveira</div>
+    <button id="menu-btn">☰</button>
+
+    <nav id="nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="apresentacao.html" class="dropdown-toggle">Apresentação</a>
+                <ul class="dropdown-menu">
+                    <li><a href="apresentacao.html#pessoal">Pessoal</a></li>
+                    <li><a href="apresentacao.html#percurso">O Meu Percurso Académico e Profissional</a></li>
+                    <li><a href="apresentacao.html#competencias">Competências</a></li>
+                </ul>
+            </li>
+            <li><a href="importancia.html">A Importância deste E-Portfolio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Aprendizagem</a>
+                <ul class="dropdown-menu">
+                    <li><a href="artigos.html">Artigos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="relatorio.html">Relatório</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <!-- Painel de Login Restrito -->
+    <div id="login-screen" class="auth-box">
+        <h1>E-Portfolio</h1>
+        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-muted);">Acesso restrito. Insira a palavra-passe para continuar.</p>
+        <div class="password-form">
+            <input type="password" id="site-password" placeholder="Palavra-passe">
+            <button onclick="verificarSenha()" class="btn">Entrar</button>
+        </div>
+        <p id="error-msg" style="color: #dc2626; margin-top: 15px; display: none; font-size: 0.95rem; font-weight: 600;">Palavra-passe incorreta!</p>
+    </div>
+
+    <!-- Conteúdo Principal Protegido -->
+    <div id="hero-content" style="display: none;">
+        <h1>Olá, sou o Leonardo Oliveira</h1>
+        <p>Bem-vindo ao meu E-Portfolio académico.</p>
+        <a href="apresentacao.html" class="btn">Explorar</a>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
